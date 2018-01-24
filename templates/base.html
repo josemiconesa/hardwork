@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+</script>
+  <title>{% block head_title %} {% endblock %}</title>
+  <link rel="stylesheet" href='{% static "css/base.css" %}'/>
+</head>
+
+<body>
+
+{% block cabecera %}
+{% endblock %}
+
+
+<ul>
+    <li><a href="/">INICIO</a></li>
+    <li><a href="{% url 'productos' %}" title="Nuestros productos">PRODUCTOS</a></li>
+    <li><a href="{% url 'faq' %}" title="Preguntas Frecuentes">FAQ</a></li>
+    <li><a href="{% url 'contacto' %}" title="Contacta con nosotros">CONTACTO</a></li>
+    <li><a href=""><IMG SRC='{% static "img/bt-facebook.png" %}' WIDTH=22 HEIGHT=22 ALT="facebook"></a></li>
+    <li><a href="https://www.instagram.com/hardwork_wear/"><IMG SRC='{% static "img/logoinstagram.png" %}' WIDTH=22 HEIGHT=22 ALT="Instagram"></a></li>
+</ul>
+
+
+
+{% block content %}
+{% endblock %}
+<footer>
+    <div>
+      <p>© HardWork 2018 | Todos los derechos reservados</p>
+    </div>
+</footer>
+</body>
+</html>

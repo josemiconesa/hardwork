@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block head_title %}
+HardWork-FAQ
+{% endblock %}
+
+{% block cabecera %}
+<IMG SRC='{% static "img/carr.jpg" %}' WIDTH=100% HEIGHT=350 ALT="hardwork">
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href='{% static "css/faq.css" %}'>
+</head>
+<body>
+
+<h1>PREGUNTAS MÁS FRECUENTES</h1>
+<button class="accordion">¿CÓMO REALIZAR UN PEDIDO?</button>
+<div class="panel">
+  <p>Tras elegir los productos que desee adquirir, deberás enviar, a través de esta página web o por correo electrónico, su pedido. Cuando recibamos su mensaje se le contestará, incluyendo el número de cuenta para hacer efectivo el pago. Ya sea vía web o en una oficina, deberá enviar el justificante de pago por correo electrónico e inmediatamente su pedido será procesado. En resumen, tendrás que enviar dos correos, uno que actué como hoja de pedido indicando el producto, referencia, cantidad y talla. Y otro tras realizar el pago de su compra con el documento que lo pruebe. Hecho esto, enseguida tendrás tu compra en la dirección indicada.</p>
+</div>
+
+<button class="accordion">¿GASTOS DE ENVÍO?</button>
+<div class="panel">
+  <p>4,50€ en toda España.</p>
+</div>
+
+<button class="accordion">MÉTODOS DE PAGO</button>
+<div class="panel">
+  <p>En estos momentos, solo disponemos de pago por transferencia bancaria. Estamos trabajando duro para establecer otros métodos más sencillos.</p>
+</div>
+
+<button class="accordion">DEVOLUCIONES</button>
+<div class="panel">
+  <p>Solo se admitirán devoluciones si hubiese algún error en el pedido y se devuelva en las mismas condiciones.</p>
+</div>
+
+<button class="accordion">¿CÚANTO TARDA?</button>
+<div class="panel">
+  <p>Entre 3 y 5 días laborales dependiendo del destino. Si la compra se realiza antes de las 12:00 am los envíos se llevarán a cabo el mismo día, en caso contrario, el siguiente día hábil.</p>
+</div>
+
+<script src='{% static "js/faq.js" %}'></script>
+
+</body>
+</html>
+
+
+{% endblock %}
